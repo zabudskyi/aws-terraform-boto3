@@ -1,0 +1,29 @@
+variable region {
+  description = "Region"
+  default     = "eu-west-2"
+}
+
+variable ami {
+  description = "Amazon Linux AMI 2017.09.1 (HVM), SSD Volume Type"
+  default     = "ami-dff017b8"
+}
+
+variable instance_type {
+  description = "t2.micro instance"
+  default     = "t2.micro"
+}
+
+variable ssh_key_name {
+  description = "ssh key to access instances"
+  default     = "mykey"
+}
+
+variable route53_zone_id {
+  description = "Route 53 zone_id"
+  default     = "<your_zone_id>"
+}
+
+variable domain_name {
+  description = "Your domain_name"
+  default     = "<your_domain_name>"
+}
