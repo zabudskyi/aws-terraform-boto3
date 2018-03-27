@@ -41,6 +41,7 @@ resource "aws_instance" "instance1" {
   key_name        = "${var.ssh_key_name}"
   security_groups = ["allow_ssh_http_icmp"]
   user_data       = "${file("files/bootstrap.txt")}"
+
   tags {
     Name = "Instance1"
   }
@@ -52,6 +53,7 @@ resource "aws_instance" "instance2" {
   key_name        = "${var.ssh_key_name}"
   security_groups = ["allow_ssh_http_icmp"]
   user_data       = "${file("files/bootstrap.txt")}"
+
   tags {
     Name = "Instance2"
   }
@@ -63,6 +65,7 @@ resource "aws_instance" "instance3" {
   key_name        = "${var.ssh_key_name}"
   security_groups = ["allow_ssh_http_icmp"]
   user_data       = "${file("files/bootstrap.txt")}"
+
   tags {
     Name = "Instance3"
   }

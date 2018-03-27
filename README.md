@@ -17,7 +17,7 @@ Stop one or more instances. Image(s) of it(them) will be created and instance(s)
 
 Wait 7 days and Image(s) will disappear as well. 
 
-## Thins to do
+## Things to do 
 - Deal with Exception `Instance is not in state 'running' or 'stopped'` when we run script too fast and Ec2 instance is still creating
 - Deal with case when `script.py` is run with host that can be resolved but doesn't belong to our environment
 - Add Elastic IP release code
